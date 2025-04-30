@@ -13,3 +13,18 @@ jobs:
       run: echo "Hello DTU biosustain!"
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
+  cowsay-job:
+    runs-on:  ubuntu-latest
+    steps:
+    - name: install_cowsay
+      run: pip install cowsay
+    - name: use_cowsay
+      run: cowsay -c cheese -t 'hey there'
+  cowpy-job:
+    runs-on:  ubuntu-latest
+    steps:
+    - name: install_cowpy
+      run: pip install cowpy
+    - name: use_cowpy
+      run: cowpy -c tux hey there
+
