@@ -31,8 +31,8 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: install_cowpy
-      run: pip install cowpy
+    - name: install_cowsay
+      run: pip install cowsay
     - name: medium_exercise
       run: python medium_two.py .
 
