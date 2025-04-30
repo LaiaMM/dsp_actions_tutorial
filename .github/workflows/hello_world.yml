@@ -23,6 +23,9 @@ jobs:
   cowpy-job:
     runs-on:  ubuntu-latest
     steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
     - name: install_cowpy
       run: pip install cowpy
     - name: use_cowpy
@@ -30,8 +33,11 @@ jobs:
   cowpy-from_py:
     runs-on:  ubuntu-latest
     steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
     - name: install_cowpy
       run: pip install cowpy
     - name: medium_exercise
-      run: medium_exercise .
+      run: python3 medium_exercise.py .
 
