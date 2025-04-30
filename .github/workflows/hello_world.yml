@@ -39,5 +39,5 @@ jobs:
     - name: install_cowpy
       run: pip install cowpy
     - name: medium_exercise
-      run: python3 medium_exercise.py .
+      run: python3 medium_two.py .
 
