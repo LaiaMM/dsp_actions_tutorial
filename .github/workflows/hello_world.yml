@@ -27,6 +27,11 @@ jobs:
       run: pip install cowpy
     - name: use_cowpy
       run: cowpy -c tux hey there
+  cowpy-from_py:
+    runs-on:  ubuntu-latest
+    steps:
+    - name: install_cowpy
+      run: pip install cowpy
     - name: medium_exercise
       run: medium_exercise .
 
