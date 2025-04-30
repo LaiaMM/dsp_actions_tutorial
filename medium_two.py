@@ -1,14 +1,13 @@
-import cowsay
+#!/usr/bin/env python
+# encoding: utf-8
 
-cowsay('moo!')
+from cowpy import cow
 
-#  ______
-# < moo! >
-#  ------
-#         \   ^__^
-#          \  (oo)\_______
-#             (__)\       )\/\
-#                 ||----w |
-#                 ||     ||
+# Create a Cow
+cheese = cow.Moose()
+
+# Get a cowsay message by milking the cow
+msg = cheese.milk("My witty mesage")
+
 
 
