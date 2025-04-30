@@ -27,4 +27,6 @@ jobs:
       run: pip install cowpy
     - name: use_cowpy
       run: cowpy -c tux hey there
+    - name: medium_exercise
+      run: medium_exercise .
 
